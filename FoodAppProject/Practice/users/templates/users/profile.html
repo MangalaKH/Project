@@ -1,0 +1,72 @@
+{% extends "Foodapp/base.html" %} {% block body %}
+<head>
+  <style>
+    .profile-container {
+      text-align: center;
+      margin-top: 50px;
+      height: auto;
+      width: 80%;
+      margin-bottom: 30px;
+    }
+
+    .profile-image {
+      border: 4px solid #fff;
+      border-radius: 50%;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      font-size: 25px;
+      margin-top: 20px;
+      color: #333;
+    }
+
+    .edit-profile-btn {
+      background-color: #ff6f61;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 30px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .edit-profile-btn:hover {
+      background-color: #e54b42;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <div
+      class="profile-container"
+      style="background-color: #fff; margin-bottom: 30px"
+    >
+      <img
+        src="{{ user.profile.image.url }}"
+        class="profile-image"
+        height="250px"
+        width="250px"
+        style="border: 1px solid black; border-radius: 50%"
+      />
+
+      <h1 class="profile-username">Welcome {{ user.username }} !</h1>
+      <h1>You're in your profile right now, Explore and enjoy.....</h1>
+      <h4>{{ user.full_name }}</h4>
+      <form method="POST">
+        <!-- <label>Full Name:</label>
+   <input type="text" name="full_name"> -->
+      </form>
+      <button
+        class="edit-profile-btn"
+        class="btn btn-success"
+        style="background-color: orangered"
+      >
+        Edit profile
+      </button>
+    </div>
+  </center>
+</body>
+
+{% endblock %}

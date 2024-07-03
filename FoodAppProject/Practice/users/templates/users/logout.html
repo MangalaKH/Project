@@ -1,0 +1,63 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static "Foodapp/style.css" %}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .navbar {
+            background-color: #333;
+            border: none;
+            border-radius: 0;
+            margin-bottom: 0;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .navbar-nav li a {
+            color: #fff;
+        }
+
+        .message-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .message-container h3 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+          <a href="{% url 'Foodapp:index' %}" class="navbar-brand" style="font-weight:bold">FoodApp</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="{% url 'users:profile' %}">Profile</a></li>
+          <li><a href="{% url 'login'%}">Login</a></li>
+        </ul>
+      </div>
+    
+      </nav>
+      <div class="message-container">
+        <h3>You've been successfully logged out. </h3>
+        <h4>See you next time!!!</h4>
+      </div>
+    {% block body %}
+    {%  endblock %}
+</body>
+</html>
+
