@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+	body{
+		background-image:url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAL0AygMBIgACEQEDEQH/xAAZAAEBAQEBAQAAAAAAAAAAAAACAQADBAf/xAAYEAEBAQEBAAAAAAAAAAAAAAAAAQJRQf/EABcBAQEBAQAAAAAAAAAAAAAAAAABAgT/xAAVEQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEQMRAD8A+as0atORmaMIUKDCgFCgw4IsODDgzSKJCghQoMKKhLEUFZGEaoqCjRpUKA0aVGornUXQDUeaosYbQkWCLCiQoBQoMOCVY6QIcGShRIUEKFBhRUJo0aArMlERKQ0UaNKhQShSrnRRorRRp54zVoNsqFBFhRIUEKFBhQCjpAhwZKFBhwRYUSEqLGiEDMlaiJUUaKNGlQqKlc6dCihRK+gK4MjDZLEiiFCgw4IUKDCgFHSBDgyUKDCioUKJFoiqkUGFawiDVo0UaNKjRQo0qFRQ0BURXBliwbaFEiwQoUGHBChQYUA4cGFBmlCgw4rKwkUGipFBKzVhBo0qFFGjSo1Fc6FOhRRolRGo4xkIaWKkKCLDgwoIUODwoM04UEoIcKDCiopIoNGrRqIyVagDRpUKKNGlRooVzp0NIo0VqDUcSglBSWJCgFCgw4JVhwYcGShQYUEKGMKCLFiEokVkoiJSGijRpUKCUKVGornRpUNDUCo1QUCFRShZGFBChwYUAocGHBkoUGFFQoUSEIrRo0BUrVhGGrRoo0aVCoqVzp1zoo0aVCihUaiK0WCUFKHAhQQ4UGFAKHEhQZWHBhQQoQwoqLGisCVmrCINIaKFGlRoo1zp0KihoKdc6KNFaI0sIYUBYcGHBChQYUA4UGHBmrDgwoMksSFFGaNFBhWpREo0hooUaVGijXOnXOoo6c66Vzo1BolQFOKkKAsODDgiw4MKAcKDCgzShRIUGVhQSUaKkaiNUUQSjSo0UKNKjRQoUqNRQ0510rnRqDRKgK6QoiwDhQYUEKHAjpBmlCgwoqFCiQhFVIQJFZKIiUhoqUKWhoDQp0KihXOnRo1HOhToUUaJURX/2Q==");
+		background-size:cover;
+		background-repeat: no-repeat;
+		background-position:cente;
+	}
+	input{
+		margin-left:60px;
+		margin-right:60px;
+		width:155px;
+		height:30px;
+		padding-left:10px;
+		padding-right:10px;
+		border:none;
+	}
+	 input[type="submit"]:hover {
+        background-color: #104B70;
+        color:white;
+    }
+	.div1{
+		box-shadow: 2px 2px 10px 2px black;
+		height:710px;
+		width:280px; 
+	}
+	.admin{
+		width:80px;
+		height:80px;
+		margin-top:10px;
+		margin-left:10px;
+		border-radius:55px;
+	}
+	h2{
+		display: inline-block;
+        text-align: middle;
+        color: rgb(176, 176, 176);
+	}
+	.img1{
+		position:absolute;
+		top:10px;
+		margin-left:290px;
+		width:1210px;
+		height:710px;
+	}
+	.div2{
+		background-image: url("https://media.istockphoto.com/id/884345608/photo/smoke-around-a-filtered-light-on-a-film-set.jpg?s=612x612&w=0&k=20&c=d4VB2X6W7woyVs_sBiA6xrV2uYcKz1n6NMCdAH0A8qA=");
+		background-size:cover;
+		background-repeat: no-repeat;
+		background-position:cente;
+		box-shadow: 2px 2px 10px 2px black;
+		width: 1400px;
+		height: 710px;
+		margin-left: 10px;
+		text-align: center;
+	}
+	.main_div{
+		display: flex;
+	}
+	h1{
+		padding-top: 24%;
+		color: rgb(200, 71, 71);
+		font-size: 50px;
+	}
+</style>
+</head>
+<body>
+<div class="main_div">
+<div class="div1">
+<img src="https://t4.ftcdn.net/jpg/04/75/00/99/360_F_475009987_zwsk4c77x3cTpcI3W1C1LU4pOSyPKaqi.jpg" class="admin">
+<h2 >Welcome Admin</h2>
+	<br><br>
+	<br><br>
+	<form action="viewuser">
+	<input type="submit" value="View Users">
+	</form>
+	<br><br>
+	
+	<form action="deleteuser" method="get">
+	<input type="submit" value="Delete Users">
+	</form>
+	<br><br>
+	
+	<form action="map-addmovie">
+	<input type="submit" value="Add Movies"/>
+	</form>
+	<br><br>
+	
+	<form action="viewmovie" method="get">
+	<input type="submit" value="View Movies"/>
+	</form>
+	<br><br>
+	
+	<form action="map-updatemovie" method="get">
+	<input type="submit" value="Update Movies"/>
+	</form>
+	<br><br>
+	
+	<form action="deletemovie">
+	<input type="submit" value="Delete Movies"/>
+	</form>
+	<br><br>
+	
+	<form action="logout">
+	<input type="submit" value="Logout"/>
+	</form>
+	<br><br>
+</div>
+<div class="div2"><h1>MOVIEFLIX</h1></div>
+</div>
+</body>
+</html>

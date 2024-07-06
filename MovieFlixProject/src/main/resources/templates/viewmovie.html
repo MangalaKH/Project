@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: rgb(178, 198, 201);;
+    }
+
+    h2 {
+        text-align: center;
+        color: black;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        border-radius: 20px;
+        background-color: rgb(161, 179, 188);;
+    }
+
+    th, td {
+        padding: 12px;
+        border: 1px solid rgb(30, 109, 149);
+        text-align: center;
+        background-color: rgb(161, 179, 188);
+        border-radius: 10px;
+    }
+
+    th {
+        background-color: rgb(16, 102, 145);;
+    }
+
+    tbody td:hover {
+        background-color: rgb(55, 108, 134);
+    }
+    .input{
+    	margin-left:1370px;
+    	height:35px;
+    	width:100px;
+    	border-radius:8px;
+    	color:white;
+    	background-color:rgb(186, 19, 19);
+    	font-weight: bold;
+    	border:none;
+    }
+</style>
+</head>
+<body>
+    <h2>View All Movies</h2>
+    <form action="adminhome">
+		<input class="input" type="submit" value="Go Home">
+	</form>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Link</th>
+                <th>Genre</th>
+                <th>Cast</th>
+                <th>Director</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="movie : ${movie}">
+                <td th:text="${movie.id}"></td>
+                <td th:text="${movie.movieName}"></td>
+                <td th:utext="${movie.movieLink}"></td>
+                <td th:text="${movie.movieGenre}"></td>
+                <td th:text="${movie.movieCast}"></td>
+                <td th:text="${movie.movieDirector}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+	h1{
+		text-align:center;
+		margin-top:270px;
+	}
+	.input1{
+		margin-left:682px;
+		width:146px;
+		height:25px;
+	}
+	.input2{
+		margin-left:706px;
+		width:100px;
+		height:35px;
+		border-radius:8px;
+		background-color:rgb(186, 19, 19);
+		color:white;
+		border:none;
+		font-weight:bold;
+	}
+	.input2:hover{
+	background-color:rgb(222, 138, 138);
+	}
+	 .input{
+    	margin-left:706px;
+    	height:35px;
+    	width:100px;
+    	border-radius:8px;
+    	color:white;
+    	background-color:rgb(186, 19, 19);
+    	font-weight: bold;
+    	border:none;
+    }
+    .input:hover{
+    	background-color:rgb(222, 138, 138);
+    }
+    body{
+		background-color: rgb(255, 212, 219);
+	}
+</style>
+</head>
+<body>
+	<h1>Enter the user id to delete</h1>
+		<form action="deleteuserid" method="post">
+			<input class="input1" type="number" name="id" id="id">
+			<br><br>
+			<input class="input2" type="submit" value="delete ">
+		</form>
+		<br>
+		<form action="adminhome">
+			<input class="input" type="submit" value="Go Home">
+		</form>
+</body>
+</html>

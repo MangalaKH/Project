@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+	body{
+		background-image:url("https://img.freepik.com/free-photo/cinema-elements-red-background-with-copy-space_23-2148457853.jpg");
+		background-size:cover;
+		background-repeat: no-repeat;
+		background-position:cente;
+	}
+	
+	input[type="text"],
+	input[type="email"],
+	input[type="password"],
+	input[type="number"],
+	textarea{
+		width:calc(100% -20px);
+		padding-left:40px;
+		margin-left:10px;
+		height:20px;
+	}
+	.signup{
+		color:white;
+		padding-left:1100px;
+		padding-top:50px;
+	}
+	label{
+		color:white;
+		padding-left:10px;
+		
+	}
+	.button{
+		margin-left:60px;
+		margin-top:20px;
+		height:40px;
+		width:100px;
+		border-radius:10px;
+		background-color:white;
+		color:black;
+		border:none;
+		font-weight:bold;
+	}
+	.div1{
+		margin-left:1000px;
+		width:300px;
+		height:470px;
+		box-shadow: 2px 2px 10px 2px black;
+	}
+
+</style>
+</head>
+<body>
+<h2 class="signup">Sign Up</h2>
+<div class="div1">
+<br>
+	<form action="register" method="post">
+		<label>Name:</label>
+		<br>
+		<input type="text" name="name">
+		<br><br>
+		<label>Email:</label>
+		<br>
+		<input type="email" name="email">
+		<br><br>
+		<label>Password:</label>
+		<br>
+		<input type="password" name="password">
+		<br><br>
+		<label>Phone Number:</label>
+		<br>
+		<input type="number" name="phone">
+		<br><br>
+		<label>Gender:</label>
+		<br>
+		M<input type="radio" name="gender" value="male">
+		F<input type="radio" name="gender" value="female">
+		O<input type="radio" name="gender" value="other">
+		<br><br>
+		<label>Address:</label>
+		<br>
+		<textarea name="address"></textarea>
+		<br><br>
+		<input class="button" type="submit" value="REGISTER"/>
+	</form>
+</div>
+</body>
+</html>

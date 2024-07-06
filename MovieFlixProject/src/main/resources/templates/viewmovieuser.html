@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>All Movies</title>
+<style>
+	
+	.movie-grid{
+		display: grid;
+		grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+		gap: 10px;
+	}
+	.movie-item{
+		padding: 10px;
+		border: 1px solid #ccc;
+		border-radius: 8px;
+		text-align: center;
+		background-color:rgb(244, 238, 230);
+		transition: transform 3s;
+	}
+	
+	.movie-item iframe{
+		width : 100%;
+		height :200px;
+	}
+	.movie-item :hover{
+		transform: scale(1.05);
+	}
+	h2{
+		text-align:center;
+		color:white;
+	}
+	body{
+		background-color:rgb(56, 39, 39);
+	}
+</style>
+</head>
+<body>
+<h2>View All Movies</h2>
+	<div class="movie-grid">
+		<div th:each="movie : ${movie}" class="movie-item">
+			<h3 th:text="${movie.movieName}">Movie Name</h3> 
+			<div th:utext="${movie.movieLink}"></div>
+		</div>
+	</div>
+	
+</body>
+</html>
