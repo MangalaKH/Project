@@ -1,0 +1,28 @@
+.div{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 217px;
+    height: 210px;
+    border-radius: 6px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 13%;
+}
+.button_number, .button_sign, .button_equal{
+    margin-left: 8px;
+    margin-top: 4px;
+    color: black;
+    background-color: white;
+    border: none;
+    width: 42px;
+    height: 24px;
+    padding: auto;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.button_sign{
+    color: rgba(239, 5, 9, 0.553);
+}
+.button_equal{
+    background-color: orangered;
+    color: white;
+}
